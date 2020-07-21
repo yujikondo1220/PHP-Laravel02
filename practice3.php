@@ -1,20 +1,33 @@
+PHP/Laravel 03
 <?php
 
-$_2018_calendar = [
-  "January" => "1月",
-  "February" => "2月",
-  "March" => "3月",
-  "April" => "4月",
-  "May" => "5月",
-  "June" => "6月",
-  "July" => "7月",
-  "August" => "8月",
-  "September" => "9月",
-  "October" => "10月",
-  "November" => "11月",
-  "December" => "12月"
-];
 
-// 12月を表示する
-echo $_2018_calendar["December"];
+//課題１
+$name = "近藤ゆうじ";
+if ($name == "近藤ゆうじ") {
+  echo "私は あなたの 名前です。";
+} else {
+  echo "あなたの名前ではありません。";
+}
 
+//課題２
+$total = 0;
+echo  $total;
+for ($i = 0; $i <= 10000; $i++) {
+  $total += $i;
+}
+echo $total;
+
+//課題３
+$fruits = array("apple", "orange", "peach", "banana", "melon");
+foreach($fruits as $fruit){
+  echo "要素は" . $fruit;
+  echo "\n";
+}
+
+//課題４
+for($i = 1; $i <= 100; $i++) {
+  if($i % 5 == 0){
+    echo $i;
+  }
+}
